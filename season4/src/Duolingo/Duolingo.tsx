@@ -7,15 +7,15 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 const words = [
-  { id: 1, word: "Er" },
-  { id: 8, word: "hungrig" },
-  { id: 2, word: "isst" },
-  { id: 7, word: "er" },
-  { id: 6, word: "weil" },
-  { id: 9, word: "ist" },
-  { id: 5, word: "," },
-  { id: 3, word: "einen" },
-  { id: 4, word: "Apfel" },
+  { id: 1, word: "Work" },
+  { id: 8, word: "Refuel" },
+  { id: 2, word: "Relax" },
+  { id: 7, word: "Challenge" },
+  { id: 6, word: "Spend" },
+  { id: 9, word: "Plan" },
+  { id: 5, word: "Earn" },
+  { id: 3, word: "Mode1" },
+  { id: 4, word: "Mode2" },
 ];
 
 const styles = StyleSheet.create({
@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
 const Duolingo = () => {
   return (
     <View style={styles.container}>
-      <Header />
       <WordList>
         {words.map((word) => (
           <Word key={word.id} {...word} />
